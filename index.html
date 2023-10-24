@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head id="head">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to Mother Base</title>
+</head>
+<body>
+<header>
+    <h1>My Website</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="#">Mother Base</a></li>
+        <li><a href="#">Shadow Moses</a></li>
+        <li><a href="#">Big Shell</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2>Recruit Soldiers</h2>
+    <p>Use Fulton System</p>
+    <button onclick="addCSS()" id="button">Click Me</button>
+</main>
+
+<footer>
+    <p>Diamond Dogs | Fox Hound | Sons of Liberty</p>
+</footer>
+
+<script>
+    let counter = 0
+    function addCSS() {
+    counter++
+    if (counter % 2 !== 0) {
+        document.getElementById("head").innerHTML = ' <title>Welcome to Mother Base</title>\n <link rel="stylesheet" href="./style.css" />'
+    }   else {
+
+        document.getElementById("head").innerHTML = ' <title>Welcome to Mother Base</title> '
+     }
+  }
+
+
+</script>
+
+</body>
+</html>
